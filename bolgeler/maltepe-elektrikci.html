@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maltepe Elektrikçi — 7/24 Lapa Elektrik</title>
+<meta name="description" content="Maltepe elektrikçi arıyorsanız doğru adrestesiniz. 7/24 elektrik arıza, tesisat, güvenlik kamera hizmeti. 30 dakikada Maltepe'ye geliyoruz.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0D1B2A;--navy2:#FFFFFF;--navy3:#F0F4F8;--teal:#1B9AAA;--teal2:#157F8D;--white:#0D1B2A;--g1:#4A5568;--g2:#6B7FA0;--border:rgba(0,0,0,0.10);--r:9px;--r2:15px;--t:0.22s ease}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:#F8FAFC;color:var(--white);line-height:1.65;overflow-x:hidden}
+a{text-decoration:none;color:inherit}.ic{width:1em;height:1em;display:inline-block;vertical-align:-0.14em;flex-shrink:0}
+nav{position:fixed;inset:0 0 auto 0;z-index:900;height:96px;display:flex;align-items:center;padding:0 32px;background:rgba(13,27,42,0.88);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.12)}
+.nav-in{max-width:1200px;margin:0 auto;width:100%;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:11px;font-family:'Sora',sans-serif;font-size:19px;font-weight:700}
+.logo-img{height:86px;width:auto;display:block}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{font-size:14px;font-weight:500;color:rgba(255,255,255,0.75);transition:color var(--t)}
+.nav-links a:hover{color:#FFFFFF}
+.btn-nav{background:var(--teal);color:#fff;font-weight:600;font-size:14px;padding:10px 22px;border-radius:var(--r)}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.page-hero{padding:160px 24px 80px;background:linear-gradient(160deg,#F0F4F8 0%,#E4EBF2 100%);border-bottom:1px solid rgba(255,255,255,0.12)}
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--g2);margin-bottom:20px;flex-wrap:wrap}
+.breadcrumb a{color:var(--teal)}
+.ph-badge{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;background:rgba(27,154,170,.12);border:1px solid rgba(27,154,170,.28);border-radius:100px;font-size:13px;font-weight:600;color:var(--teal);margin-bottom:18px}
+.dot{width:7px;height:7px;border-radius:50%;background:#4ade80;animation:pulse 2.2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.5)}}
+.ph-title{font-family:'Sora',sans-serif;font-size:clamp(32px,5vw,60px);font-weight:800;letter-spacing:-.02em;line-height:1.08;margin-bottom:18px}
+.ph-sub{font-size:18px;color:var(--g1);max-width:580px;line-height:1.75;margin-bottom:32px}
+.ph-actions{display:flex;gap:14px;flex-wrap:wrap}
+.btn-primary{display:inline-flex;align-items:center;gap:9px;background:var(--teal);color:#fff;font-weight:700;font-size:16px;padding:16px 32px;border-radius:var(--r);transition:background var(--t),transform var(--t);border:none;cursor:pointer}
+.btn-primary:hover{background:var(--teal2);transform:translateY(-2px)}
+.btn-ghost{display:inline-flex;align-items:center;gap:9px;background:transparent;color:var(--white);font-weight:600;font-size:16px;padding:16px 32px;border-radius:var(--r);border:1.5px solid rgba(0,0,0,.18);transition:border-color var(--t)}
+.btn-ghost:hover{border-color:rgba(0,0,0,.3)}
+
+.content-wrap{display:grid;grid-template-columns:1fr 320px;gap:52px;padding:72px 24px;max-width:1200px;margin:0 auto;align-items:start}
+.main-content h2{font-family:'Sora',sans-serif;font-size:26px;font-weight:700;margin:36px 0 14px}
+.main-content h2:first-child{margin-top:0}
+.main-content p{font-size:16px;color:var(--g1);line-height:1.8;margin-bottom:16px}
+.svc-mini{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0}
+.sm-card{background:#FFFFFF;border:1px solid var(--border);box-shadow:0 2px 8px rgba(0,0,0,.06);border-radius:var(--r2);padding:18px;display:flex;gap:12px;align-items:flex-start;transition:border-color var(--t);text-decoration:none;color:inherit}
+.sm-card:hover{border-color:rgba(27,154,170,.4)}
+.sm-icon{font-size:24px;flex-shrink:0}
+.sm-name{font-size:14px;font-weight:600;margin-bottom:3px}
+.sm-desc{font-size:12px;color:var(--g1)}
+
+.sidebar{position:sticky;top:116px}
+.side-card{background:#FFFFFF;border:1px solid var(--border);box-shadow:0 2px 8px rgba(0,0,0,.06);border-radius:var(--r2);padding:28px;margin-bottom:16px}
+.side-title{font-family:'Sora',sans-serif;font-size:16px;font-weight:700;margin-bottom:18px}
+.side-item{display:flex;gap:10px;align-items:center;font-size:14px;padding:8px 0;border-bottom:1px solid var(--border);color:var(--g1)}
+.side-item:last-child{border-bottom:none}
+.side-item span:first-child{font-size:18px;flex-shrink:0}
+.btn-full{width:100%;justify-content:center;margin-bottom:10px}
+.wa-btn{display:flex;align-items:center;justify-content:center;gap:8px;background:#25D366;color:#fff;font-weight:700;font-size:15px;padding:14px;border-radius:var(--r);width:100%}
+.wa-btn:hover{background:#1dba5a}
+
+.nearby{padding:56px 24px;background:var(--navy2);border-top:1px solid var(--border)}
+.nearby-in{max-width:1200px;margin:0 auto}
+.nearby-title{font-family:'Sora',sans-serif;font-size:20px;font-weight:700;margin-bottom:20px}
+.nearby-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.nearby-card{background:var(--navy);border:1px solid var(--border);border-radius:var(--r2);padding:18px 20px;transition:border-color var(--t),transform var(--t)}
+.nearby-card:hover{border-color:rgba(27,154,170,.4);transform:translateY(-2px)}
+.nc-name{font-weight:600;font-size:15px;margin-bottom:4px;color:var(--teal)}
+.nc-desc{font-size:13px;color:var(--g1)}
+
+footer{background:var(--navy);border-top:1px solid rgba(255,255,255,0.12);padding:32px 24px;text-align:center;font-size:13px;color:rgba(255,255,255,0.55)}
+footer a{color:var(--teal)}
+.wa-fab{position:fixed;bottom:26px;right:26px;z-index:950;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;font-size:26px;box-shadow:0 4px 22px rgba(37,211,102,.38);transition:transform var(--t)}
+.wa-fab:hover{transform:scale(1.12)}
+@media(max-width:860px){.content-wrap{grid-template-columns:1fr}.sidebar{position:static}.svc-mini{grid-template-columns:1fr}.nearby-grid{grid-template-columns:1fr}.nav-links,.btn-nav{display:none}}
+@media(max-width:500px){.ph-actions{flex-direction:column}}
+<link rel="icon" href="../images/favicon.png" type="image/png"><link rel="apple-touch-icon" href="../images/favicon.png">
+</style>
+</head>
+<body>
+<svg style="display:none" aria-hidden="true">
+<symbol id="i-zap" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M20.52 3.48A11.94 11.94 0 0 0 12.04 0C5.5 0 .2 5.3.2 11.85c0 2.09.55 4.13 1.6 5.93L0 24l6.4-1.68a11.86 11.86 0 0 0 5.64 1.44h.01c6.54 0 11.85-5.3 11.85-11.85 0-3.17-1.23-6.14-3.38-8.43zM12.05 21.6h-.01a9.7 9.7 0 0 1-4.95-1.36l-.35-.21-3.69.97.99-3.6-.23-.37a9.73 9.73 0 0 1-1.49-5.18c0-5.38 4.38-9.76 9.77-9.76 2.61 0 5.06 1.02 6.9 2.87a9.68 9.68 0 0 1 2.86 6.9c0 5.39-4.38 9.76-9.8 9.76zm5.36-7.3c-.29-.15-1.72-.85-1.99-.95-.27-.1-.46-.15-.66.15-.2.29-.76.95-.93 1.15-.17.2-.34.22-.63.07-.29-.15-1.22-.45-2.32-1.43-.86-.77-1.44-1.71-1.61-2-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.03-.51-.08-.15-.6-1.45-.82-1.99-.22-.53-.44-.46-.6-.47h-.51c-.17 0-.44.06-.68.32-.24.27-.93.91-.93 2.21 0 1.3.95 2.56 1.08 2.74.13.17 1.79 2.74 4.34 3.74 2.55 1 2.55.67 3.01.63.46-.04 1.49-.6 1.7-1.19.21-.58.21-1.08.15-1.19-.06-.1-.27-.16-.56-.31z"/></symbol>
+<symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></symbol>
+<symbol id="i-tool" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z"/></symbol>
+<symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></symbol>
+<symbol id="i-settings" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></symbol>
+<symbol id="i-plug" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6M15 2v6M7 8h10v4a5 5 0 0 1-10 0V8z"/><path d="M12 17v5"/></symbol>
+<symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.74V17h8v-2.26A7 7 0 0 0 12 2z"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+<symbol id="i-radio" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49M7.76 16.24a6 6 0 0 1 0-8.49M19.07 4.93a10 10 0 0 1 0 14.14M4.93 19.07a10 10 0 0 1 0-14.14"/></symbol>
+<symbol id="i-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="1" ry="1"/><path d="M9 22v-4h6v4M8 6h.01M8 10h.01M8 14h.01M16 6h.01M16 10h.01M16 14h.01"/></symbol>
+<symbol id="i-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41 13.42 20.58a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></symbol>
+<symbol id="i-clipboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></symbol>
+<symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><polyline points="22 6 12 13 2 6"/></symbol>
+</svg>
+<nav>
+  <div class="nav-in">
+    <a href="../index.html" class="logo"><img src="../images/logo.png" alt="Lapa Elektrik" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Ana Sayfa</a></li>
+      <li><a href="../hizmetler.html">Hizmetler</a></li>
+      <li><a href="../hizmetler.html#bolgeler">Hizmet Bölgesi</a></li>
+      <li><a href="../index.html#hakkimizda">Hakkımızda</a></li>
+      <li><a href="../referanslar.html">Referanslar</a></li><li><a href="../iletisim.html">İletişim</a></li>
+    </ul>
+    <a href="tel:05307922834" class="btn-nav"><svg class="ic"><use href="#i-phone"/></svg> Hemen Ara</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="../index.html">Anasayfa</a> ›
+      <a href="../hizmetler.html#bolgeler">Hizmet Bölgesi</a> ›
+      <span>Maltepe Elektrikçi</span>
+    </div>
+    <div class="ph-badge"><span class="dot"></span>Maltepe'ye Aktif Hizmet</div>
+    <h1 class="ph-title">Maltepe Elektrikçi —<br>7/24 Garantili Hizmet</h1>
+    <p class="ph-sub">Maltepe ve çevresine 30 dakikada ulaşıyor, elektrik arıza, tesisat ve güvenlik kamera işlerinizi garantili çözüyoruz. Şeffaf fiyat, yazılı garanti.</p>
+    <div class="ph-actions">
+      <a href="tel:05307922834" class="btn-primary"><svg class="ic"><use href="#i-phone"/></svg> Hemen Ara</a>
+      <a href="https://wa.me/905307922834" class="btn-ghost"><svg class="ic"><use href="#i-whatsapp"/></svg> WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<div class="content-wrap">
+  <div class="main-content">
+    <h2>Maltepe'ye Sunduğumuz Elektrik Hizmetleri</h2>
+    <p>Maltepe ve Anadolu Yakası genelinde 7/24 elektrik hizmeti sunuyoruz. Acil arızadan komple tesisat yenilemeye, güvenlik kamera kurulumundan pano modernizasyonuna kadar her işi aynı gün yapıyoruz.</p>
+    <div class="svc-mini">
+      <a href="../hizmetler/elektrik-ariza.html" class="sm-card">
+        <span class="sm-icon"><svg class="ic"><use href="#i-alert"/></svg></span>
+        <div><div class="sm-name">Elektrik Arıza</div><div class="sm-desc">7/24 acil müdahale</div></div>
+      </a>
+      <a href="../hizmetler/elektrik-tesisati.html" class="sm-card">
+        <span class="sm-icon"><svg class="ic"><use href="#i-tool"/></svg></span>
+        <div><div class="sm-name">Elektrik Tesisatı</div><div class="sm-desc">Yeni bina & tadilat</div></div>
+      </a>
+      <a href="../hizmetler/guvenlik-kamera.html" class="sm-card">
+        <span class="sm-icon"><svg class="ic"><use href="#i-camera"/></svg></span>
+        <div><div class="sm-name">Güvenlik Kamera</div><div class="sm-desc">IP kamera & NVR kurulumu</div></div>
+      </a>
+      <a href="../hizmetler/pano-kurulumu.html" class="sm-card">
+        <span class="sm-icon"><svg class="ic"><use href="#i-settings"/></svg></span>
+        <div><div class="sm-name">Pano Kurulumu</div><div class="sm-desc">Sigorta & pano yenileme</div></div>
+      </a>
+      <a href="../hizmetler/priz-anahtar.html" class="sm-card">
+        <span class="sm-icon"><svg class="ic"><use href="#i-plug"/></svg></span>
+        <div><div class="sm-name">Priz & Anahtar</div><div class="sm-desc">Montaj & değişim</div></div>
+      </a>
+      <a href="../hizmetler/aydinlatma-avize.html" class="sm-card">
+        <span class="sm-icon"><svg class="ic"><use href="#i-bulb"/></svg></span>
+        <div><div class="sm-name">Aydınlatma & Avize</div><div class="sm-desc">LED & avize montajı</div></div>
+      </a>
+    </div>
+    <h2>Neden Maltepe'ye Bizi Tercih Etmelisiniz?</h2>
+    <p>Maltepe'ye 15 yılı aşkın deneyimimizle hizmet veriyoruz. Bölgeyi iyi tanıyan ekibimiz, ortalama 30 dakikada kapınızda olur. Tüm işlemlerimiz TSE uyumlu malzemeyle yapılır ve 2 yıl yazılı garanti kapsamındadır.</p>
+    <p>Fiyatı iş başlamadan net olarak belirtiriz. Ek ücret veya sürpriz fatura olmaz. Her iş sonunda fatura ve garanti belgesi teslim edilir.</p>
+  </div>
+
+  <div class="sidebar">
+    <div class="side-card">
+      <div class="side-title">Maltepe İçin Hemen Ulaşın</div>
+      <a href="tel:05307922834" class="btn-primary btn-full" style="margin-bottom:10px"><svg class="ic"><use href="#i-phone"/></svg> 0530 792 28 34</a>
+      <a href="https://wa.me/905307922834" class="wa-btn"><svg class="ic"><use href="#i-whatsapp"/></svg> WhatsApp</a>
+    </div>
+    <div class="side-card">
+      <div class="side-title">Garantilerimiz</div>
+      <div class="side-item"><span><svg class="ic"><use href="#i-clock"/></svg></span><span>30 dakikada Maltepe'ye</span></div>
+      <div class="side-item"><span><svg class="ic"><use href="#i-shield"/></svg></span><span>2 yıl yazılı garanti</span></div>
+      <div class="side-item"><span><svg class="ic"><use href="#i-tag"/></svg></span><span>Sabit & şeffaf fiyat</span></div>
+      <div class="side-item"><span><svg class="ic"><use href="#i-clipboard"/></svg></span><span>Faturalı hizmet</span></div>
+      <div class="side-item"><span><svg class="ic"><use href="#i-check"/></svg></span><span>TSE uyumlu malzeme</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="nearby">
+  <div class="nearby-in">
+    <div class="nearby-title">Yakın İlçelere de Hizmet Veriyoruz</div>
+    <div class="nearby-grid">
+      <a href="kartal-elektrikci.html" class="nearby-card">
+        <div class="nc-name">Kartal Elektrikçi</div>
+        <div class="nc-desc">7/24 elektrik hizmeti</div>
+      </a>
+      <a href="atasehir-elektrikci.html" class="nearby-card">
+        <div class="nc-name">Ataşehir Elektrikçi</div>
+        <div class="nc-desc">7/24 elektrik hizmeti</div>
+      </a>
+      <a href="pendik-elektrikci.html" class="nearby-card">
+        <div class="nc-name">Pendik Elektrikçi</div>
+        <div class="nc-desc">7/24 elektrik hizmeti</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p><strong>Lapa Elektrik</strong> · Maltepe Elektrikçi · 7/24 Hizmet · <a href="tel:05307922834">0530 792 28 34</a></p>
+  <p style="margin-top:8px">© 2026 Lapa Elektrik · <a href="../index.html">Anasayfa</a> · <a href="../iletisim.html">İletişim</a></p>
+</footer>
+<a href="https://wa.me/905307922834" class="wa-fab" title="WhatsApp" target="_blank"><svg class="ic"><use href="#i-whatsapp"/></svg></a>
+</body>
+</html>

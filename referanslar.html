@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Referanslarımız — Lapa Elektrik</title>
+<link rel="icon" href="images/favicon.png" type="image/png"><link rel="apple-touch-icon" href="images/favicon.png">
+<meta name="description" content="Lapa Elektrik olarak güvendiğimiz ve kullandığımız markalar. Elektrik, güvenlik kamera ve araç içi elektronik alanında çalıştığımız ürünler.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0D1B2A;--navy2:#FFFFFF;--navy3:#F0F4F8;--teal:#1B9AAA;--teal2:#157F8D;--white:#0D1B2A;--g1:#4A5568;--g2:#6B7FA0;--border:rgba(0,0,0,0.10);--r:9px;--r2:15px;--t:0.22s ease}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:#F8FAFC;color:var(--white);line-height:1.65;overflow-x:hidden}
+a{text-decoration:none;color:inherit}.ic{width:1em;height:1em;display:inline-block;vertical-align:-0.14em;flex-shrink:0}
+nav{position:fixed;inset:0 0 auto 0;z-index:900;height:96px;display:flex;align-items:center;padding:0 32px;background:rgba(13,27,42,0.88);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.12)}
+.nav-in{max-width:1200px;margin:0 auto;width:100%;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:11px;font-family:'Sora',sans-serif;font-size:19px;font-weight:700}
+.logo-img{height:86px;width:auto;display:block}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{font-size:14px;font-weight:500;color:rgba(255,255,255,0.75);transition:color var(--t)}
+.nav-links a:hover,.nav-links a.active{color:#FFFFFF}
+.nav-links a.active{border-bottom:2px solid var(--teal);padding-bottom:2px}
+.btn-nav{background:var(--teal);color:#fff;font-weight:600;font-size:14px;padding:10px 22px;border-radius:var(--r)}
+.btn-nav:hover{background:var(--teal2)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none}
+.hamburger span{display:block;width:22px;height:2px;background:#FFFFFF;border-radius:2px}
+.mob-menu{display:none;position:fixed;inset:96px 0 0;background:#1A2E42;z-index:800;padding:28px 24px;flex-direction:column;gap:20px;border-top:1px solid rgba(255,255,255,0.12)}
+.mob-menu.open{display:flex}
+.mob-menu a{font-size:17px;font-weight:500;color:#B8C8D8;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.12)}
+.mob-cta{margin-top:8px;background:var(--teal);color:#fff;text-align:center;padding:14px;border-radius:var(--r);font-weight:700;font-size:16px}
+
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.page-hero{padding:160px 24px 72px;background:linear-gradient(160deg,#F0F4F8 0%,#E4EBF2 100%);border-bottom:1px solid var(--border)}
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--g2);margin-bottom:20px}
+.breadcrumb a{color:var(--teal)}
+.ph-title{font-family:'Sora',sans-serif;font-size:clamp(32px,5vw,56px);font-weight:800;letter-spacing:-.02em;line-height:1.08;margin-bottom:18px}
+.ph-sub{font-size:18px;color:var(--g1);max-width:600px;line-height:1.75}
+
+/* SECTION */
+.section{padding:72px 24px}
+.sec-label{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:10px}
+.sec-title{font-family:'Sora',sans-serif;font-size:clamp(22px,3vw,34px);font-weight:700;margin-bottom:8px}
+.sec-sub{font-size:15px;color:var(--g1);margin-bottom:40px;max-width:560px}
+
+/* CATEGORY FILTER */
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:36px}
+.filter-btn{padding:8px 20px;border-radius:var(--r);font-size:13px;font-weight:600;cursor:pointer;border:1.5px solid var(--border);background:#FFFFFF;color:var(--g1);transition:var(--t)}
+.filter-btn:hover,.filter-btn.on{background:var(--teal);color:#fff;border-color:var(--teal)}
+
+/* BRAND GRID */
+.brand-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.brand-card{background:#FFFFFF;border:1px solid var(--border);border-radius:var(--r2);padding:28px 20px;display:flex;flex-direction:column;align-items:center;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.05);transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
+.brand-card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,.1);border-color:rgba(27,154,170,.3)}
+.brand-logo{width:100%;height:100px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;border-radius:var(--r);overflow:hidden;background:#F8FAFC;border:1px dashed rgba(0,0,0,.12)}
+.brand-logo img{max-width:100%;max-height:80px;width:auto;height:auto;object-fit:contain}
+.brand-logo-placeholder{font-family:'Sora',sans-serif;font-size:32px;font-weight:800;color:var(--teal);opacity:.5}
+.brand-cat{display:inline-block;font-size:11px;font-weight:700;background:rgba(27,154,170,.1);color:var(--teal);padding:3px 10px;border-radius:20px;margin-bottom:8px;text-transform:uppercase;letter-spacing:.06em}
+.brand-name{font-family:'Sora',sans-serif;font-size:16px;font-weight:700;margin-bottom:4px}
+.brand-desc{font-size:13px;color:var(--g1);line-height:1.5}
+
+/* CTA */
+.cta-box{background:linear-gradient(135deg,rgba(27,154,170,.08) 0%,rgba(27,154,170,.03) 100%);border:1px solid rgba(27,154,170,.2);border-radius:var(--r2);padding:56px 48px;text-align:center;margin-top:16px}
+.cta-box h2{font-family:'Sora',sans-serif;font-size:clamp(22px,3vw,32px);font-weight:700;margin-bottom:10px}
+.cta-box p{color:var(--g1);font-size:16px;margin-bottom:28px}
+.cta-btns{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+.btn-primary{display:inline-flex;align-items:center;gap:9px;background:var(--teal);color:#fff;font-weight:700;font-size:16px;padding:16px 32px;border-radius:var(--r);transition:background var(--t),transform var(--t)}
+.btn-primary:hover{background:var(--teal2);transform:translateY(-2px)}
+.btn-wa{display:inline-flex;align-items:center;gap:8px;background:#25D366;color:#fff;font-weight:700;font-size:16px;padding:16px 32px;border-radius:var(--r);transition:background var(--t),transform var(--t)}
+.btn-wa:hover{background:#1dba5a;transform:translateY(-2px)}
+
+footer{background:var(--navy);border-top:1px solid rgba(255,255,255,0.12);padding:32px 24px;text-align:center;font-size:13px;color:rgba(255,255,255,0.55)}
+footer a{color:var(--teal)}
+.wa-fab{position:fixed;bottom:26px;right:26px;z-index:950;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;font-size:26px;box-shadow:0 4px 22px rgba(37,211,102,.38);transition:transform var(--t)}
+.wa-fab:hover{transform:scale(1.12)}
+
+@media(max-width:980px){.brand-grid{grid-template-columns:repeat(2,1fr)}.nav-links,.btn-nav{display:none}.hamburger{display:flex}}
+@media(max-width:560px){.brand-grid{grid-template-columns:1fr 1fr}.cta-box{padding:36px 24px}.cta-btns{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<svg style="display:none" aria-hidden="true">
+<symbol id="i-zap" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M20.52 3.48A11.94 11.94 0 0 0 12.04 0C5.5 0 .2 5.3.2 11.85c0 2.09.55 4.13 1.6 5.93L0 24l6.4-1.68a11.86 11.86 0 0 0 5.64 1.44h.01c6.54 0 11.85-5.3 11.85-11.85 0-3.17-1.23-6.14-3.38-8.43zM12.05 21.6h-.01a9.7 9.7 0 0 1-4.95-1.36l-.35-.21-3.69.97.99-3.6-.23-.37a9.73 9.73 0 0 1-1.49-5.18c0-5.38 4.38-9.76 9.77-9.76 2.61 0 5.06 1.02 6.9 2.87a9.68 9.68 0 0 1 2.86 6.9c0 5.39-4.38 9.76-9.8 9.76zm5.36-7.3c-.29-.15-1.72-.85-1.99-.95-.27-.1-.46-.15-.66.15-.2.29-.76.95-.93 1.15-.17.2-.34.22-.63.07-.29-.15-1.22-.45-2.32-1.43-.86-.77-1.44-1.71-1.61-2-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.03-.51-.08-.15-.6-1.45-.82-1.99-.22-.53-.44-.46-.6-.47h-.51c-.17 0-.44.06-.68.32-.24.27-.93.91-.93 2.21 0 1.3.95 2.56 1.08 2.74.13.17 1.79 2.74 4.34 3.74 2.55 1 2.55.67 3.01.63.46-.04 1.49-.6 1.7-1.19.21-.58.21-1.08.15-1.19-.06-.1-.27-.16-.56-.31z"/></symbol>
+</svg>
+
+<nav>
+  <div class="nav-in">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Lapa Elektrik" class="logo-img">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="hizmetler.html">Hizmetler</a></li>
+      <li><a href="hizmetler.html#bolgeler">Hizmet Bölgesi</a></li>
+      <li><a href="hakkimizda.html">Hakkımızda</a></li>
+      <li><a href="referanslar.html" class="active">Referanslar</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+    </ul>
+    <a href="tel:05307922834" class="btn-nav"><svg class="ic"><use href="#i-phone"/></svg> Hemen Ara</a>
+    <button class="hamburger" onclick="document.getElementById('mob').classList.toggle('open')" aria-label="Menü">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mob-menu" id="mob">
+  <a href="index.html">Ana Sayfa</a>
+  <a href="hizmetler.html">Hizmetler</a>
+  <a href="hizmetler.html#bolgeler">Hizmet Bölgesi</a>
+  <a href="hakkimizda.html">Hakkımızda</a>
+  <a href="referanslar.html">Referanslar</a>
+  <a href="iletisim.html">İletişim</a>
+  <a href="tel:05307922834" class="mob-cta"><svg class="ic"><use href="#i-phone"/></svg> Hemen Ara — 0530 792 28 34</a>
+</div>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Anasayfa</a> › <span>Referanslarımız</span></div>
+    <h1 class="ph-title">Güvendiğimiz markalar,<br>kaliteli ürünler</h1>
+    <p class="ph-sub">Her kurulumda kaliteyi ön planda tutuyoruz. Güvenilir markalarla çalışmak, sunduğumuz hizmetin temelidir.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <div class="filters" id="filterBar">
+      <button class="filter-btn on" onclick="filterBrands('tumu', this)">Tümü</button>
+      <button class="filter-btn" onclick="filterBrands('kamera', this)">Güvenlik Kamera</button>
+      <button class="filter-btn" onclick="filterBrands('elektrik', this)">Elektrik & Pano</button>
+      <button class="filter-btn" onclick="filterBrands('aydinlatma', this)">Aydınlatma</button>
+      <button class="filter-btn" onclick="filterBrands('diafon', this)">Diafon & Haberleşme</button>
+    </div>
+
+    <div class="brand-grid" id="brandGrid">
+
+      <!-- GÜVENLIK KAMERA -->
+      <div class="brand-card" data-cat="kamera">
+        <div class="brand-logo">
+          <img src="markalar/dahua.png" alt="Dahua">
+          <!-- <span class="brand-logo-placeholder">DH</span> -->
+        </div>
+        <span class="brand-cat">Güvenlik Kamera</span>
+        <div class="brand-name">Dahua</div>
+        <div class="brand-desc">IP kamera, NVR/DVR kayıt sistemleri ve akıllı güvenlik çözümleri</div>
+      </div>
+
+      <div class="brand-card" data-cat="kamera">
+        <div class="brand-logo">
+          <img src="markalar/hikvision.png" alt="Hikvision">
+          <!-- <span class="brand-logo-placeholder">HV</span> -->
+        </div>
+        <span class="brand-cat">Güvenlik Kamera</span>
+        <div class="brand-name">Hikvision</div>
+        <div class="brand-desc">Yüksek çözünürlüklü IP kamera sistemleri ve uzaktan izleme çözümleri</div>
+      </div>
+
+      <div class="brand-card" data-cat="kamera">
+        <div class="brand-logo">
+          <img src="markalar/mobilbil.png" alt="MobilBil">
+          <!-- <span class="brand-logo-placeholder">MB</span> -->
+        </div>
+        <span class="brand-cat">Güvenlik Kamera</span>
+        <div class="brand-name">MobilBil</div>
+        <div class="brand-desc">Araç içi kamera sistemleri ve mobil kayıt çözümleri</div>
+      </div>
+
+      <!-- ELEKTRİK & PANO -->
+      <div class="brand-card" data-cat="elektrik">
+        <div class="brand-logo">
+              <img src="markalar/siemens.png" alt="Siemens">
+          <!-- <span class="brand-logo-placeholder">SI</span> -->
+        </div>
+        <span class="brand-cat">Elektrik & Pano</span>
+        <div class="brand-name">Siemens</div>
+        <div class="brand-desc">Sigorta ve otomat sistemleri, kaçak akım röleleri, pano ekipmanları</div>
+      </div>
+
+      <div class="brand-card" data-cat="elektrik">
+        <div class="brand-logo">
+          <img src="markalar/legrand.png" alt="Legrand">
+          <!-- <span class="brand-logo-placeholder">LG</span> -->
+        </div>
+        <span class="brand-cat">Elektrik & Pano</span>
+        <div class="brand-name">Legrand</div>
+        <div class="brand-desc">Elektrik tesisatı ürünleri, pano sistemleri ve kablo kanalları</div>
+      </div>
+
+      <div class="brand-card" data-cat="elektrik">
+        <div class="brand-logo">
+          <img src="markalar/panasonic.png" alt="Panasonic">
+          <!-- <span class="brand-logo-placeholder">PA</span> -->
+        </div>
+        <span class="brand-cat">Elektrik & Pano</span>
+        <div class="brand-name">Panasonic</div>
+        <div class="brand-desc">Elektrik panosu, sigorta ve modüler elektrik sistemleri</div>
+      </div>
+
+      <div class="brand-card" data-cat="elektrik">
+        <div class="brand-logo">
+          <img src="markalar/viko.png" alt="Viko">
+          <!-- <span class="brand-logo-placeholder">VI</span> -->
+        </div>
+        <span class="brand-cat">Elektrik & Pano</span>
+        <div class="brand-name">Viko</div>
+        <div class="brand-desc">Priz, anahtar ve elektrik tesisat aksesuarları</div>
+      </div>
+
+      <!-- AYDINLATMA -->
+      <div class="brand-card" data-cat="aydinlatma">
+        <div class="brand-logo">
+          <img src="markalar/osram.png" alt="Osram">
+          <!-- <span class="brand-logo-placeholder">OS</span> -->
+        </div>
+        <span class="brand-cat">Aydınlatma</span>
+        <div class="brand-name">Osram</div>
+        <div class="brand-desc">LED aydınlatma, spot ve dış mekan aydınlatma ürünleri</div>
+      </div>
+
+      <div class="brand-card" data-cat="aydinlatma">
+        <div class="brand-logo">
+          <img src="markalar/philips.png" alt="Philips">
+          <!-- <span class="brand-logo-placeholder">PH</span> -->
+        </div>
+        <span class="brand-cat">Aydınlatma</span>
+        <div class="brand-name">Philips</div>
+        <div class="brand-desc">Enerji tasarruflu LED ampul, spot ve akıllı aydınlatma sistemleri</div>
+      </div>
+
+      <!-- DİAFON & HABERLEŞME -->
+      <div class="brand-card" data-cat="diafon">
+        <div class="brand-logo">
+          <img src="markalar/audio.png" alt="Audio">
+          <!-- <span class="brand-logo-placeholder">AU</span> -->
+        </div>
+        <span class="brand-cat">Diafon & Haberleşme</span>
+        <div class="brand-name">Audio</div>
+        <div class="brand-desc">Görüntülü ve sesli diafon sistemleri, kapı zili ve interkom çözümleri</div>
+      </div>
+
+      <div class="brand-card" data-cat="diafon">
+        <div class="brand-logo">
+          <img src="markalar/netelsan.png" alt="Netelsan">
+          <!-- <span class="brand-logo-placeholder">NT</span> -->
+        </div>
+        <span class="brand-cat">Diafon & Haberleşme</span>
+        <div class="brand-name">Netelsan</div>
+        <div class="brand-desc">Diafon sistemleri, haberleşme altyapısı ve ağ çözümleri</div>
+      </div>
+
+    </div>
+
+    <div class="cta-box">
+      <h2>Kullandığımız markalar hakkında soru mu var?</h2>
+      <p>Kurulum öncesinde hangi ürünleri kullanacağımızı açıklıyoruz. Arayın, konuşalım.</p>
+      <div class="cta-btns">
+        <a href="tel:05307922834" class="btn-primary"><svg class="ic"><use href="#i-phone"/></svg> 0530 792 28 34</a>
+        <a href="https://wa.me/905307922834" class="btn-wa"><svg class="ic"><use href="#i-whatsapp"/></svg> WhatsApp</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p><strong>Lapa Elektrik</strong> · İstanbul 7/24 Elektrik Hizmeti · <a href="tel:05307922834">0530 792 28 34</a></p>
+  <p style="margin-top:8px">© 2026 Lapa Elektrik · <a href="index.html">Anasayfa</a> · <a href="iletisim.html">İletişim</a></p>
+</footer>
+
+<a href="https://wa.me/905307922834" class="wa-fab" title="WhatsApp" target="_blank"><svg class="ic"><use href="#i-whatsapp"/></svg></a>
+
+<script>
+function filterBrands(cat, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('on'))
+  btn.classList.add('on')
+  document.querySelectorAll('.brand-card').forEach(card => {
+    card.style.display = (cat === 'tumu' || card.dataset.cat === cat) ? '' : 'none'
+  })
+}
+</script>
+</body>
+</html>

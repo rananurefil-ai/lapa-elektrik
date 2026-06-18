@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>İletişim — Lapa Elektrik İstanbul Elektrikçi</title>
+<link rel="icon" href="images/favicon.png" type="image/png"><link rel="apple-touch-icon" href="images/favicon.png">
+
+<meta name="description" content="Lapa Elektrik ile iletişime geçin. 7/24 elektrik hizmeti için hemen arayın veya WhatsApp'tan yazın.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0D1B2A;--navy2:#FFFFFF;--navy3:#F0F4F8;--teal:#1B9AAA;--teal2:#157F8D;--white:#0D1B2A;--g1:#4A5568;--g2:#6B7FA0;--border:rgba(0,0,0,0.10);--r:9px;--r2:15px;--t:0.22s ease}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:#F8FAFC;color:var(--white);line-height:1.65;overflow-x:hidden}
+a{text-decoration:none;color:inherit}.ic{width:1em;height:1em;display:inline-block;vertical-align:-0.14em;flex-shrink:0}
+nav{position:fixed;inset:0 0 auto 0;z-index:900;height:96px;display:flex;align-items:center;padding:0 32px;background:rgba(13,27,42,0.88);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.12)}
+.nav-in{max-width:1200px;margin:0 auto;width:100%;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:11px;font-family:'Sora',sans-serif;font-size:19px;font-weight:700}
+.logo-img{height:86px;width:auto;display:block}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{font-size:14px;font-weight:500;color:rgba(255,255,255,0.75);transition:color var(--t)}
+.nav-links a:hover,.nav-links a.active{color:#FFFFFF}
+.nav-links a.active{border-bottom:2px solid var(--teal);padding-bottom:2px}
+.btn-nav{background:var(--teal);color:#fff;font-weight:600;font-size:14px;padding:10px 22px;border-radius:var(--r)}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.page-hero{padding:160px 24px 72px;background:linear-gradient(160deg,#F0F4F8 0%,#E4EBF2 100%);border-bottom:1px solid rgba(255,255,255,0.12)}
+.breadcrumb{display:flex;gap:8px;font-size:13px;color:var(--g2);margin-bottom:20px}
+.breadcrumb a{color:var(--teal)}
+.ph-title{font-family:'Sora',sans-serif;font-size:clamp(32px,5vw,56px);font-weight:800;letter-spacing:-.02em;line-height:1.08;margin-bottom:18px}
+.ph-sub{font-size:18px;color:var(--g1);max-width:520px;line-height:1.75}
+.contact-section{padding:80px 24px}
+.contact-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
+.quick-btns{display:flex;flex-direction:column;gap:14px;margin-bottom:40px}
+.btn-call{display:flex;align-items:center;gap:12px;background:var(--teal);color:#fff;font-weight:700;font-size:18px;padding:20px 28px;border-radius:var(--r2);transition:background var(--t),transform var(--t)}
+.btn-call:hover{background:var(--teal2);transform:translateY(-2px)}
+.btn-wa-big{display:flex;align-items:center;gap:12px;background:#25D366;color:#fff;font-weight:700;font-size:18px;padding:20px 28px;border-radius:var(--r2);transition:background var(--t),transform var(--t)}
+.btn-wa-big:hover{background:#1dba5a;transform:translateY(-2px)}
+.info-cards{display:flex;flex-direction:column;gap:14px}
+.info-card{background:#FFFFFF;border:1px solid var(--border);box-shadow:0 2px 8px rgba(0,0,0,.06);border-radius:var(--r2);padding:20px;display:flex;gap:14px;align-items:center}
+.ic-icon{width:44px;height:44px;background:rgba(27,154,170,.12);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.ic-label{font-size:12px;color:var(--g2);text-transform:uppercase;letter-spacing:.07em}
+.ic-val{font-weight:600;font-size:15px;color:var(--teal);margin-top:2px}
+.form-wrap{background:#FFFFFF;border:1px solid var(--border);box-shadow:0 2px 8px rgba(0,0,0,.06);border-radius:var(--r2);padding:36px}
+.form-title{font-family:'Sora',sans-serif;font-size:22px;font-weight:700;margin-bottom:8px}
+.form-sub{font-size:14px;color:var(--g2);margin-bottom:24px}
+.fg{margin-bottom:16px}
+.flabel{font-size:12px;font-weight:600;color:var(--g1);display:block;margin-bottom:7px;text-transform:uppercase;letter-spacing:.06em}
+.finput,.fselect,.ftarea{width:100%;background:#FFFFFF;border:1.5px solid var(--border);border-radius:var(--r);padding:13px 15px;color:var(--white);font-size:15px;font-family:'Inter',sans-serif;outline:none;transition:border-color var(--t)}
+.finput:focus,.fselect:focus,.ftarea:focus{border-color:rgba(27,154,170,.5)}
+.fselect option{background:var(--navy2)}
+.ftarea{min-height:100px;resize:vertical}
+.btn-primary{display:inline-flex;align-items:center;gap:9px;background:var(--teal);color:#fff;font-weight:700;font-size:16px;padding:16px 32px;border-radius:var(--r);transition:background var(--t),transform var(--t);border:none;cursor:pointer;width:100%;justify-content:center}
+.btn-primary:hover{background:var(--teal2);transform:translateY(-2px)}
+footer{background:var(--navy);border-top:1px solid rgba(255,255,255,0.12);padding:32px 24px;text-align:center;font-size:13px;color:rgba(255,255,255,0.55)}
+footer a{color:var(--teal)}
+.wa-fab{position:fixed;bottom:26px;right:26px;z-index:950;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;font-size:26px;box-shadow:0 4px 22px rgba(37,211,102,.38);transition:transform var(--t)}
+.wa-fab:hover{transform:scale(1.12)}
+@media(max-width:860px){.contact-grid{grid-template-columns:1fr}.nav-links,.btn-nav{display:none}}
+</style>
+</head>
+<body>
+<svg style="display:none" aria-hidden="true">
+<symbol id="i-zap" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M20.52 3.48A11.94 11.94 0 0 0 12.04 0C5.5 0 .2 5.3.2 11.85c0 2.09.55 4.13 1.6 5.93L0 24l6.4-1.68a11.86 11.86 0 0 0 5.64 1.44h.01c6.54 0 11.85-5.3 11.85-11.85 0-3.17-1.23-6.14-3.38-8.43zM12.05 21.6h-.01a9.7 9.7 0 0 1-4.95-1.36l-.35-.21-3.69.97.99-3.6-.23-.37a9.73 9.73 0 0 1-1.49-5.18c0-5.38 4.38-9.76 9.77-9.76 2.61 0 5.06 1.02 6.9 2.87a9.68 9.68 0 0 1 2.86 6.9c0 5.39-4.38 9.76-9.8 9.76zm5.36-7.3c-.29-.15-1.72-.85-1.99-.95-.27-.1-.46-.15-.66.15-.2.29-.76.95-.93 1.15-.17.2-.34.22-.63.07-.29-.15-1.22-.45-2.32-1.43-.86-.77-1.44-1.71-1.61-2-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.03-.51-.08-.15-.6-1.45-.82-1.99-.22-.53-.44-.46-.6-.47h-.51c-.17 0-.44.06-.68.32-.24.27-.93.91-.93 2.21 0 1.3.95 2.56 1.08 2.74.13.17 1.79 2.74 4.34 3.74 2.55 1 2.55.67 3.01.63.46-.04 1.49-.6 1.7-1.19.21-.58.21-1.08.15-1.19-.06-.1-.27-.16-.56-.31z"/></symbol>
+<symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></symbol>
+<symbol id="i-tool" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z"/></symbol>
+<symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></symbol>
+<symbol id="i-settings" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></symbol>
+<symbol id="i-plug" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6M15 2v6M7 8h10v4a5 5 0 0 1-10 0V8z"/><path d="M12 17v5"/></symbol>
+<symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.74V17h8v-2.26A7 7 0 0 0 12 2z"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+<symbol id="i-radio" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49M7.76 16.24a6 6 0 0 1 0-8.49M19.07 4.93a10 10 0 0 1 0 14.14M4.93 19.07a10 10 0 0 1 0-14.14"/></symbol>
+<symbol id="i-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="1" ry="1"/><path d="M9 22v-4h6v4M8 6h.01M8 10h.01M8 14h.01M16 6h.01M16 10h.01M16 14h.01"/></symbol>
+<symbol id="i-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41 13.42 20.58a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></symbol>
+<symbol id="i-clipboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></symbol>
+<symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><polyline points="22 6 12 13 2 6"/></symbol>
+</svg>
+<nav>
+  <div class="nav-in">
+    <a href="index.html" class="logo"><img src="images/logo.png" alt="Lapa Elektrik" class="logo-img"></a>
+    <ul class="nav-links">
+       <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="hizmetler.html">Hizmetler</a></li>
+      <li><a href="hizmetler.html#bolgeler">Hizmet Bölgesi</a></li>
+      <li><a href="hakkimizda.html">Hakkımızda</a></li>
+           <li><a href="referanslar.html">Referanslar</a></li>
+
+      <li><a href="iletisim.html" class="active">İletişim</a></li>
+    </ul>
+    <a href="tel:05307922834" class="btn-nav"><svg class="ic"><use href="#i-phone"/></svg> Hemen Ara</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Anasayfa</a> › <span>İletişim</span></div>
+    <h1 class="ph-title">Nasıl ulaşabilirsiniz?</h1>
+    <p class="ph-sub">Arayın, WhatsApp'tan yazın veya formu doldurun — en kısa sürede geri dönüyoruz. 7/24 aktifiz.</p>
+  </div>
+</div>
+
+<div class="contact-section">
+  <div class="contact-grid">
+    <div>
+      <div class="quick-btns">
+        <a href="tel:05307922834" class="btn-call"><svg class="ic"><use href="#i-phone"/></svg> 0530 792 28 34</a>
+        <a href="https://wa.me/905307922834" class="btn-wa-big"><svg class="ic"><use href="#i-whatsapp"/></svg> WhatsApp'tan Yaz</a>
+      </div>
+      <div class="info-cards">
+        <div class="info-card">
+          <div class="ic-icon"><svg class="ic"><use href="#i-clock"/></svg></div>
+          <div><div class="ic-label">Çalışma Saatleri</div><div class="ic-val">7/24 — Kesintisiz Hizmet</div></div>
+        </div>
+        <div class="info-card">
+          <div class="ic-icon"><svg class="ic"><use href="#i-pin"/></svg></div>
+          <div><div class="ic-label">Hizmet Bölgesi</div><div class="ic-val">İstanbul — Anadolu & Avrupa Yakası</div></div>
+        </div>
+        <div class="info-card">
+          <div class="ic-icon"><svg class="ic"><use href="#i-clock"/></svg></div>
+          <div><div class="ic-label">Acil Müdahale</div><div class="ic-val">Ortalama 30 dakikada adresinizdeyiz</div></div>
+        </div>
+        <div class="info-card">
+          <div class="ic-icon"><svg class="ic"><use href="#i-shield"/></svg></div>
+          <div><div class="ic-label">Garanti</div><div class="ic-val">2 yıl yazılı işçilik garantisi</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="form-wrap">
+      <div class="form-title">Ücretsiz Teklif İste</div>
+      <div class="form-sub">Formu doldurun, 30 dakika içinde sizi arayalım.</div>
+      <div class="fg"><label class="flabel">Ad Soyad</label><input type="text" id="f-ad" class="finput" placeholder="Adınızı girin"></div>
+      <div class="fg"><label class="flabel">Telefon</label><input type="tel" id="f-tel" class="finput" placeholder="05XX XXX XX XX"></div>
+      <div class="fg">
+        <label class="flabel">Hizmet Türü</label>
+        <select id="f-hizmet" class="fselect">
+          <option value="">Seçin...</option>
+          <option>Elektrik Arıza / Acil</option>
+          <option>Elektrik Tesisatı</option>
+          <option>Güvenlik Kamera Kurulumu</option>
+          <option>Pano Kurulumu / Yenileme</option>
+          <option>Priz & Anahtar Montajı</option>
+          <option>Aydınlatma / Avize</option>
+          <option>Topraklama Hattı</option>
+          <option>Diafon / Zayıf Akım</option>
+          <option>Komple Proje</option>
+        </select>
+      </div>
+      <div class="fg"><label class="flabel">İlçeniz</label><input type="text" id="f-ilce" class="finput" placeholder="Örn: Kadıköy, Beşiktaş..."></div>
+      <div class="fg"><label class="flabel">Açıklama</label><textarea id="f-aciklama" class="ftarea" placeholder="Durumu kısaca anlatın..."></textarea></div>
+      <button class="btn-primary" onclick="teklifWhatsapp()"><svg class="ic"><use href="#i-whatsapp"/></svg> WhatsApp ile Gönder</button>
+      <p style="font-size:12px;color:var(--g2);margin-top:12px;text-align:center;">WhatsApp uygulaması açılacak, mesajı gönderin.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p><strong>Lapa Elektrik</strong> · İstanbul 7/24 Elektrik Hizmeti · <a href="tel:05307922834">0530 792 28 34</a></p>
+  <p style="margin-top:8px">© 2026 Lapa Elektrik · <a href="index.html">Anasayfa</a></p>
+</footer>
+<a href="https://wa.me/905307922834" class="wa-fab" title="WhatsApp" target="_blank"><svg class="ic"><use href="#i-whatsapp"/></svg></a>
+
+<script>
+function teklifWhatsapp() {
+  var ad       = document.getElementById('f-ad').value.trim();
+  var tel      = document.getElementById('f-tel').value.trim();
+  var hizmet   = document.getElementById('f-hizmet').value;
+  var ilce     = document.getElementById('f-ilce').value.trim();
+  var aciklama = document.getElementById('f-aciklama').value.trim();
+
+  if (!ad || !tel) {
+    alert('Lütfen en azından ad soyad ve telefon numaranızı girin.');
+    return;
+  }
+
+  var mesaj = 'LAPA ELEKTRİK — Teklif Talebi\n';
+  mesaj += '——————————————\n';
+  mesaj += 'Ad Soyad: ' + ad + '\n';
+  mesaj += 'Telefon: ' + tel + '\n';
+  if (hizmet)   mesaj += 'Hizmet: ' + hizmet + '\n';
+  if (ilce)     mesaj += 'İlçe: ' + ilce + '\n';
+  if (aciklama) mesaj += '——————————————\nAçıklama:\n' + aciklama + '\n';
+  mesaj += '——————————————';
+
+  window.open('https://wa.me/905307922834?text=' + encodeURIComponent(mesaj), '_blank');
+}
+</script>
+</body>
+</html>
