@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Ana Sayfalar -->
+  <url><loc>https://lapaelektrik.com.tr/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/hizmetler</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/hakkimizda</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/iletisim</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+
+  <!-- Hizmet Sayfaları -->
+  <url><loc>https://lapaelektrik.com.tr/hizmetler/elektrik-ariza</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/hizmetler/elektrik-tesisati</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/hizmetler/guvenlik-kamera</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/hizmetler/pano-kurulumu</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/hizmetler/priz-anahtar</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/hizmetler/aydinlatma-avize</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/hizmetler/topraklama</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/hizmetler/diafon-zayif-akim</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/hizmetler/komple-proje</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+
+  <!-- Bölge Sayfaları - Anadolu Yakası -->
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/kadikoy-elektrikci</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/uskudar-elektrikci</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/atasehir-elektrikci</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/maltepe-elektrikci</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/kartal-elektrikci</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/pendik-elektrikci</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/tuzla-elektrikci</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/umraniye-elektrikci</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/sancaktepe-elektrikci</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/beykoz-elektrikci</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/sultanbeyli-elektrikci</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/cekmekoy-elektrikci</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+
+  <!-- Bölge Sayfaları - Avrupa Yakası -->
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/besiktas-elektrikci</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/sisli-elektrikci</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/beyoglu-elektrikci</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/fatih-elektrikci</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/kagithane-elektrikci</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/sariyer-elektrikci</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/bakirkoy-elektrikci</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/zeytinburnu-elektrikci</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/bagcilar-elektrikci</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/gungoren-elektrikci</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/bahcelievler-elektrikci</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/esenler-elektrikci</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/kucukcekmece-elektrikci</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/avcilar-elektrikci</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/basaksehir-elektrikci</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/arnavutkoy-elektrikci</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/eyupsultan-elektrikci</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://lapaelektrik.com.tr/bolgeler/buyukcekmece-elektrikci</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+
+</urlset>
