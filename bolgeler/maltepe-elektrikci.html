@@ -36,6 +36,12 @@ nav{position:fixed;inset:0 0 auto 0;z-index:900;height:96px;display:flex;align-i
 .nav-phone{font-size:13px;font-weight:600;color:rgba(255,255,255,0.9);white-space:nowrap;display:flex;align-items:center;gap:7px;line-height:1.4;transition:color 0.22s ease}
 .nav-phone:hover{color:var(--teal)}
 .nav-phone-label{font-size:10px;font-weight:700;color:#fff;background:var(--teal);padding:1px 7px;border-radius:3px;text-transform:uppercase;letter-spacing:.05em}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none}
+.hamburger span{display:block;width:22px;height:2px;background:#FFFFFF;border-radius:2px}
+.mob-menu{display:none;position:fixed;inset:96px 0 0;background:#1A2E42;z-index:800;padding:28px 24px;flex-direction:column;gap:20px;border-top:1px solid rgba(255,255,255,0.12)}
+.mob-menu.open{display:flex}
+.mob-menu a{font-size:17px;font-weight:500;color:#B8C8D8;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.12)}
+.mob-cta{margin-top:8px;background:var(--teal);color:#fff;text-align:center;padding:14px;border-radius:var(--r);font-weight:700;font-size:16px}
 .container{max-width:1200px;margin:0 auto;padding:0 24px}
 .page-hero{padding:160px 24px 80px;background:linear-gradient(160deg,#F0F4F8 0%,#E4EBF2 100%);border-bottom:1px solid rgba(255,255,255,0.12)}
 .breadcrumb{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--g2);margin-bottom:20px;flex-wrap:wrap}
@@ -85,7 +91,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,0.12);paddin
 footer a{color:var(--teal)}
 .wa-fab{position:fixed;bottom:26px;right:26px;z-index:950;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;font-size:26px;box-shadow:0 4px 22px rgba(37,211,102,.38);transition:transform var(--t)}
 .wa-fab:hover{transform:scale(1.12)}
-@media(max-width:860px){.content-wrap{grid-template-columns:1fr}.sidebar{position:static}.svc-mini{grid-template-columns:1fr}.nearby-grid{grid-template-columns:1fr}.nav-links,.nav-phones,.btn-nav{display:none}}
+@media(max-width:860px){.content-wrap{grid-template-columns:1fr}.sidebar{position:static}.svc-mini{grid-template-columns:1fr}.nearby-grid{grid-template-columns:1fr}.nav-links,.nav-phones,.btn-nav{display:none}.hamburger{display:flex}}
 @media(max-width:500px){.ph-actions{flex-direction:column}}
 <link rel="icon" href="../images/favicon.png" type="image/png"><link rel="apple-touch-icon" href="../images/favicon.png">
 </style>
@@ -130,8 +136,22 @@ footer a{color:var(--teal)}
       <a href="tel:05307922834" class="btn-nav"><svg class="ic"><use href="#i-phone"/></svg> Hemen Ara</a>
       <img src="../images/turkey.png" alt="T&uuml;rkiye" class="nav-flag">
     </div>
+    <button class="hamburger" onclick="document.getElementById('mobMenu').classList.toggle('open')" aria-label="Men&uuml;">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
+<div class="mob-menu" id="mobMenu">
+  <a href="../index.html">Ana Sayfa</a>
+  <a href="../hizmetler.html">Hizmetler</a>
+  <a href="../hizmetler.html#bolgeler">Hizmet B&ouml;lgesi</a>
+  <a href="../hakkimizda.html">Hakk&#305;m&#305;zda</a>
+  <a href="../referanslar.html">Referanslar</a>
+  <a href="../iletisim.html">&Iletisim;</a>
+  <div style="display:flex;align-items:center;justify-content:center;padding:8px 0 4px"><img src="../images/turkey.png" alt="T&uuml;rkiye" style="height:30px;border-radius:3px"></div>
+  <a href="tel:05307922834" class="mob-cta"><svg class="ic"><use href="#i-phone"/></svg> Anadolu &mdash; 0530 792 28 34</a>
+  <a href="tel:05335618428" class="mob-cta" style="background:#157F8D;margin-top:-8px"><svg class="ic"><use href="#i-phone"/></svg> Avrupa &mdash; 0533 561 84 28</a>
+</div>
 
 <div class="page-hero">
   <div class="container">
