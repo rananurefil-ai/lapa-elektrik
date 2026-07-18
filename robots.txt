@@ -1,4 +1,8 @@
+# Lapa Elektrik için arama motoru tarama kuralları
 User-agent: *
 Allow: /
+Disallow: /cgi-bin/
+Disallow: /tmp/
 
+# Ana sitemap
 Sitemap: https://lapaelektrik.com.tr/sitemap.xml
